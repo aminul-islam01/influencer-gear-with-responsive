@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+    box-sizing: border-box;
+}
+.primary-btn{
+    background: #E02C6D;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 24px;
+
+}
+.fa-arrow-right{
+    color: #fff;
+    margin-left: 8px;
+}
+header{
+    width: 1200px;
+    margin: auto;
+}
+/* nav bar styles */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 87px;
+}
+.nav-title h2{
+    font-weight: 700;
+    font-size: 24px;
+}
+menu{
+    display: flex;
+    gap: 34px;
+}
+.menu-bar a{
+    text-decoration: none;
+}
+/* banner stylesL */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.banner-content{
+    width: 50%;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 52px;
+}
+.banner-discribtion{
+    font-weight: 600;
+    margin: 16px 0;
+}
+.banner-content button{
+    border: 1px solid transparent;
+    border-radius: 41px;
+}
+.banner-img{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.banner-img img{
+    padding-top: 60px;
+}
+/* weab-section styles */
+.weab-section{
+    width: 1110px;
+    margin: 69px auto 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 62px;
+    border-top: 2px solid #AAAAAA;
+    border-bottom: 2px solid #AAAAAA;
+}
+
+
+/* products sections styles */
+.products-section{
+    width: 1047px;
+    margin: 100px auto 0;
+}
+.sestion-title{
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.product-item{
+    padding: 17px 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.product-img img{
+    width: 100%;
+}
+.product-title{
+    font-weight: 700;
+    font-size: 28px;
+    margin: 16px 0 6px;
+}
+.product-price{
+    font-size: 24px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.product-rating .yellow{
+    font-size: 12px;
+    color: #f5af02;
+}
+.product-rating span{
+    font-weight: 700;
+    font-size: 14px;
+    color: #5E6366;
+    margin-left: 8px;
+}
+.product-discribtion{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.018em;
+    color: #787885;
+}
+.see-more{
+    text-align: right;
+    color: #E02C6D;
+    margin-top: 25px;
+    font-weight: 700;
+}
+/* feature-products section styles */
+.feature-products{
+    width: 1110px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    gap: 96px;
+}
+.feature-products-img{
+    width: 39%;
+}
+.feature-products-img img{
+    width: 100%;
+}
+.future-products-content{
+    width: 61%;
+}
+.feature-products-title{
+    font-weight: 700;
+    font-size: 38px;
+}
+.future-products-discribtion{
+    font-weight: 700;
+    line-height: 28px;
+    margin: 16px 0;
+    color: #6C6C6C;
+}
+.future-products-content button{
+    border: 1px solid transparent;
+}
+
+/* footer section styles  */
+footer{
+    display: flex;
+    justify-content: center;
+    background: #0A0826;
+}
+.footer-discribtiion{
+    width: 270px;
+    text-align: center;
+    padding: 50px 0;
+}
+.footer-title{
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.footer-discribtiion p{
+    font-weight: 600;
+    font-size: 14px;
+    color: #D9DBE1;
+    margin-bottom: 10px;
+}
+.f-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+.f-logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #22212c;
+    border-radius: 50%;
+}
+.f-logo a>i{
+    color: #fff
+}
+
+/* responsive styles */
+@media screen and (max-width:576px) {
+    header{
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+    }
+    menu{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px 10px 0;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 35px;
+    }
+    .banner-img{
+        width: 100%;
+        padding-top: 17px;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+    }
+    .banner-img img {
+        width: 100%;
+        padding: 36px;
+    }
+
+    .weab-section {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        border: 0;
+        padding: 0;
+    }
+    
+    .products-section{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .products-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product-title {
+        font-size: 25px;
+    }
+    
+    .feature-products {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 50px;
+        padding: 0 10px;
+    }
+    .feature-products-img{
+        width: 100%;
+    }
+    .future-products-content{
+        width: 100%;
+    }
+    .footer-discribtiion {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    header{
+        width: 100%;
+    }
+    nav {
+        align-items: flex-start;
+        padding: 87px 20px 0;
+    }
+    menu {
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px 20px 0;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 35px;
+    }
+    .banner-img{
+        width: 100%;
+        padding-top: 31px;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+    }
+    .banner-img img {
+        width: 100%;
+        padding: 36px;
+    }
+
+    .weab-section {
+        width: 100%;
+        justify-content: center;
+        padding: 35px 20px;
+        border: 0;
+        flex-wrap: wrap;
+    }
+    .weab-section img{
+        margin: 0 10px;
+    }
+
+    .products-section{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .products-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .feature-products{
+        width: 100%;
+        flex-direction: column-reverse;
+        padding: 0 20px;
+    }
+    .future-products-content {
+        width: 100%;
+    }
+    .feature-products-img{
+        width: 100%;
+    }
+
+}
